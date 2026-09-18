@@ -3,7 +3,7 @@
  * alone only clears same-prefix leftovers, so older prefixes (e.g. CeYi1knB
  * era) can keep serving stale index-*.js forever. */
 self.addEventListener('activate', (event) => {
-  const keep = 'pedigree-p2-sheet-v4';
+  const keep = 'pedigree-p3-v5';
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(
